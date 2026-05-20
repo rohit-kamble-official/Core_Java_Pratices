@@ -11,7 +11,7 @@ public class UserDefineArrayOneDimension {
 
         for(int i = 0 ; i<size;i++){
 
-            System.out.print("Enter the " +(i+1)+" elemnet of array");
+            System.out.print("Enter the " +(i+1)+ " elemnet of array");
             arr[i]=sc.nextInt();
         }
         System.out.println("Array element");
