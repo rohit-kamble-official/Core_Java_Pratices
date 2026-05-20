@@ -8,9 +8,6 @@ public class FahrenheitToCelesius {
        float cel = (F - 32) * 5 / 9;
        System.out.println("Your temp is :"+cel);
 
-
-
-
     }
 
 

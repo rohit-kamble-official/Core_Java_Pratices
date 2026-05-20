@@ -25,3 +25,5 @@ public class Narrowing {
         System.out.println(b); // -103
     }
 }               
+   
+

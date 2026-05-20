@@ -40,8 +40,7 @@ public class AmstrongNumber {
             }
         }
     }
-
-
+    
     public static void main(String[] args) {
         int arr[] = {153,370,123,407};
        isArmstrong(arr);

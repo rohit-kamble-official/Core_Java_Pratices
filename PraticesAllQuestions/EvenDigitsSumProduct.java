@@ -24,8 +24,5 @@ public class EvenDigitsSumProduct {
          } else{
             System.out.println("Not same ");
          }
-
-
-
     }
 }

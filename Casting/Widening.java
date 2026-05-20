@@ -3,7 +3,7 @@ package Casting;
 public class Widening {
     public static void main(String[] args) {
 
-        // byte → short → int → long → float → double
+        // byte → short → char , int → long → float → double
         byte b = 100;
         System.out.println("byte value    : " + b);
 
