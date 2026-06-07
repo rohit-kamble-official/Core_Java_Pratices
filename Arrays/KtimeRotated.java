@@ -3,21 +3,36 @@ package Arrays;
 import java.util.Arrays;
 
 public class KtimeRotated {
-    public static void main(String[] args){
-      
-        int arr[] = {1,2,3,4,5};
-        int n = arr.length , k = 2;
 
-        k = k%n;
-        for(int j = 0; j<k; j++){
-            int temp = arr[0];
+    public static void reverse(int arr[], int start, int end) {
 
-            for(int i = 1; i<n ;i++){
-                 arr[i-1] = arr[i];
-            }
-            arr[n-1] = temp;
+        while (start < end) {
+
+            int temp = arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+
+            start++;
+            end--;
         }
-        System.out.println(Arrays.toString(arr));
+    }
 
+    public static void main(String[] args) {
+
+        int arr[] = {1, 2, 3, 4, 5};
+
+        int n = arr.length;
+        int k = 2;
+
+        k = k % n;
+
+        reverse(arr, 0, k - 1); // [2 1 3 4 5 ]
+
+        reverse(arr, k, n - 1);     
+
+        reverse(arr, 0, n - 1);  
+
+        System.out.println(Arrays.toString(arr));         
     }
 }
+      
