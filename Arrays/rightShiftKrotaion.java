@@ -2,7 +2,7 @@ package Arrays;
 
 import java.util.Arrays;
 
-public class KtimeRotated {
+public class rightShiftKrotaion {
 
     public static void reverse(int arr[], int start, int end) {
 
@@ -22,17 +22,18 @@ public class KtimeRotated {
         int arr[] = {1, 2, 3, 4, 5};
 
         int n = arr.length;  
-        int k = 2;
+        int k = 1;
 
         k = k % n;
 
-        reverse(arr, 0, k - 1); // [2 1 3 4 5 ]
-
-        reverse(arr, k, n - 1);     
-
-        reverse(arr, 0, n - 1);  
+        reverse(arr, 0, n - 1);   // reverse whole array
+        reverse(arr, 0, k - 1);   // reverse first k elements
+        reverse(arr, k, n - 1);   // reverse remaining elements;  
 
         System.out.println(Arrays.toString(arr));         
     }
 }
-      
+        
+//[5 4 3 2 1]
+//[5 4 3 2 1]
+//[5 1 2 3 4]
